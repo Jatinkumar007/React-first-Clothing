@@ -1,0 +1,100 @@
+.flex{
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.image{
+    margin: 0px 80px;
+}
+
+/* Man,Women,Kids,Beauty,Homeliving */
+.position21{
+    list-style-type: none;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 100%;
+    left: 195px;
+    background-color: white;
+    padding-left: 50px;
+}
+.position22{
+    list-style-type: none;
+    position: absolute;
+    width: 300px;
+    top: 100%;
+    left: 480px; 
+    height: 400px;
+    background-color: white;
+}
+.position23{
+    list-style-type: none;
+    position: absolute;
+    width: 300px;
+    top: 100%;
+    left: 730px; 
+    height: 400px;
+    background-color: white;
+}
+
+
+/* Studio */
+.position3{
+    list-style-type: none;
+    position: absolute;
+    width: 600px;
+    top: 100%;
+    left: 400px; 
+    height: 400px;
+    background-color: white;
+    padding: 50px 80px;
+}
+.position3 > h2{
+    text-align: center;
+    margin: 5px 0px 30px 0px;
+    background-color: white;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #FF2B9E;
+    text-decoration-thickness: 4px;
+}
+.underline2{
+    text-decoration: none;
+}
+.white{
+    /* background-color: white; */
+    border: 2px solid black;
+    width: 500px;
+    height: 100px;
+}
+.position4{
+    list-style-type: none;
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    right: 40px; 
+    background-color: white;
+    padding: 50px 30px;
+}
+/* .position4 > button{
+    border: 1px solid #909090;
+   
+} */
+.selector1{
+    border: 1px solid #FF2B9E;
+    margin-top: 15px;
+    padding: 5px 20px;
+    color: #FF2B9E;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.selector2{
+    border: 1px solid #909090;
+    margin-top: 15px;
+    padding: 5px 20px;
+    color: #FF2B9E;
+    font-weight: 500;
+    border-radius: 5px;
+}

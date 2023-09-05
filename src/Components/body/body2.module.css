@@ -1,0 +1,86 @@
+/* .image{
+    width: 300px;
+    height: 320px;
+}
+.image2{
+    width: 360px;
+    height: 380px;
+} */
+.button{
+    padding: 5px;
+    background-color: #dfdfe2;
+    border-radius: 50%;
+}
+.carouselContainer{
+    display: flex;
+}
+.Flex{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Example media queries */
+@media (max-width: 576px) {
+    /* Styles for extra small screens (XS) */
+    .image{
+        width: 180px;
+        height: 200px;
+    }
+    .image2{
+        width: 240px;
+        height: 260px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Styles for small screens (SM) */
+    .image{
+        width: 220px;
+        height: 240px;
+    }
+    .image2{
+        width: 280px;
+        height: 300px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* Styles for medium screens (MD) */
+    .image{
+        width: 250px;
+        height: 270px;
+    }
+    .image2{
+        width: 310px;
+        height: 330px;
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* Styles for large screens (LG) */
+    .image{
+        width: 280px;
+        height: 300px;
+    }
+    .image2{
+        width: 340px;
+        height: 360px;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    /* Styles for extra large screens (XL) */
+    .image{
+        width: 300px;
+        height: 320px;
+    }
+    .image2{
+        width: 320px;
+        height: 370px;
+    }
+  }
+  

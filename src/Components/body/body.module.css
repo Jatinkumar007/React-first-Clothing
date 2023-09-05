@@ -1,0 +1,40 @@
+/* ImageCarousel.css */
+.carousel-root {
+     max-width: 800px;      /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel .sliderwrapper {
+    overflow: hidden;
+  }
+  
+  .carousel .slider {
+    display: flex;
+  }
+  
+  .carousel .slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Customize slide appearance */
+  .carouselslide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Optional background color for the slides */
+    z-index: 2;
+  }
+  
+  .carouselslide img {
+    max-width: 100%;
+    height: auto
+  }
+  

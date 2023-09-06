@@ -10,7 +10,7 @@ function B3() {
   const datafetch = async () => {
     try {
       setLoading(true);
-      const d1 = await fetch(`http://localhost:8080/RakshabandhanHM?_limit=${5}`);
+      const d1 = await fetch(`https://mock-server-r0tm.onrender.com/RakshabandhanHM?_limit=${5}`);
       const d2 = await d1.json();
       setData(d2);
       setLoading(false);

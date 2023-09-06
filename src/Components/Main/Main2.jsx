@@ -46,7 +46,7 @@ function Main2() {
   }
   const fetchdata=async(sort,filter,filter2)=>{
     try {
-      const d1=await fetch(`http://localhost:8080/Data?_sort=price&_order=${sort}&${filter}&${filter2}`);
+      const d1=await fetch(`https://mock-server-r0tm.onrender.com/Data?_sort=price&_order=${sort}&${filter}&${filter2}`);
       const d2= await d1.json();
       setData(d2)
       //setTotalItem(d2.length);
@@ -67,14 +67,14 @@ function Main2() {
      if (value.mobilenumber !== "") {
       // Send a GET request to check if value.mobilenumber exists in userData
       axios
-        .get(`http://localhost:8080/userData?mobilenumber=${value.mobilenumber}`)
+        .get(`https://mock-server-r0tm.onrender.com/userData?mobilenumber=${value.mobilenumber}`)
         .then((response) => {
           const userData = response.data[0]; // Assuming you are updating the first matching user
           const updatedWishlist = [...userData.wishlist, filteredData]; // Add filteredData to the wishlist
           
           // Send a PUT request to update the userData with the updated wishlist
           axios
-            .put(`http://localhost:8080/userData/${userData.id}`, { ...userData, wishlist: updatedWishlist })
+            .put(`https://mock-server-r0tm.onrender.com/userData/${userData.id}`, { ...userData, wishlist: updatedWishlist })
             .then((res) => {
               console.log(res);
             })

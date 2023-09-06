@@ -31,7 +31,7 @@ function User2() {
     };
     // const fetchData=async()=>{
     //     try {
-    //         axios.get('http://localhost:8080/userData')
+    //         axios.get('https://mock-server-r0tm.onrender.com/userData')
     //         .then((res)=>{setDta(res.data)});
     //     } catch (error) {
     //         console.log(error)

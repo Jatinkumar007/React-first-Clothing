@@ -14,7 +14,7 @@ function Wishlist() {
   
     const dataFetch=()=>{
         axios
-        .get(`http://localhost:8080/userData?mobilenumber=${value.mobilenumber}`)
+        .get(`https://mock-server-r0tm.onrender.com/userData?mobilenumber=${value.mobilenumber}`)
         .then((res)=>{setWisData(res.data[0].wishlist)})
         .catch((err)=>console.log(err))
     }
@@ -23,13 +23,13 @@ function Wishlist() {
     },[])
     const handleDelete=(id)=>{
         axios
-        .get(`http://localhost:8080/userData?mobilenumber=${value.mobilenumber}`)
+        .get(`https://mock-server-r0tm.onrender.com/userData?mobilenumber=${value.mobilenumber}`)
         .then((res)=>{
             const updatedWishlist = res.data[0].wishlist.filter((item)=>(item.id!==id))
             console.log(updatedWishlist)
 
             axios
-          .put(`http://localhost:8080/userData/${res.data[0].id}`, { ...res.data[0], wishlist: updatedWishlist }) //always enter data.id 
+          .put(`https://mock-server-r0tm.onrender.com/userData/${res.data[0].id}`, { ...res.data[0], wishlist: updatedWishlist }) //always enter data.id 
           .then(() => {
             setWisData(updatedWishlist);
           })

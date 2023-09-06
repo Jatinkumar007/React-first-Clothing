@@ -14,7 +14,7 @@ function B2() {
   const datafetch = async () => {
     try {
       setLoading(true);
-      const d1 = await fetch(`http://localhost:8080/ProductsHM`);
+      const d1 = await fetch(`https://mock-server-r0tm.onrender.com/ProductsHM`);
       const d2 = await d1.json();
       setData(d2);
       setLoading(false);
@@ -89,7 +89,7 @@ export default B2;
 //   const datafetch=async(currentPage)=>{
 //       try {
 //           setLoading(true)
-//           const d1 = await fetch(`http://localhost:8080/ProductsHM?_page=${currentPage}&_limit=${limit}`);
+//           const d1 = await fetch(`https://mock-server-r0tm.onrender.com/ProductsHM?_page=${currentPage}&_limit=${limit}`);
 //           const d2 = await d1.json();
 //           //console.log(typeof d1.headers.get('X-Total-Count'))
 //           setTotal(Number(d1.headers.get('X-Total-Count')))

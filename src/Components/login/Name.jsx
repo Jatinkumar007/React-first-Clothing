@@ -16,7 +16,7 @@ function Name() {
     const handleClick=()=>{
         // if(value.mobilenumber!==""){
         // axios
-        // .post(`http://localhost:8080/userData`,{...value})
+        // .post(`https://mock-server-r0tm.onrender.com/userData`,{...value})
         // .then((res)=>{
         //   console.log(res)
         //   navbar('/main')
@@ -27,12 +27,12 @@ function Name() {
         if (value.mobilenumber !== "") {
           // Send a GET request to check if value.mobilenumber exists in userData
           axios
-            .get(`http://localhost:8080/userData?mobilenumber=${value.mobilenumber}`)
+            .get(`https://mock-server-r0tm.onrender.com/userData?mobilenumber=${value.mobilenumber}`)
             .then((response) => {
               if (response.data.length === 0) {
                 // The number is not in the database, so you can proceed with the POST request
                 axios
-                  .post(`http://localhost:8080/userData`, { ...value,wishlist:[] })
+                  .post(`https://mock-server-r0tm.onrender.com/userData`, { ...value,wishlist:[] })
                   .then((res) => {
                     console.log(res);
                     navbar("/main");

@@ -27,10 +27,10 @@ function Payment() {
   const navigate=useNavigate();
   const handleDelete=()=>{
     axios
-    .get(`http://localhost:8080/userData?mobilenumber=${someOtherName.mobilenumber}`)
+    .get(`https://mock-server-r0tm.onrender.com/userData?mobilenumber=${someOtherName.mobilenumber}`)
     .then((res)=>{
         axios
-      .put(`http://localhost:8080/userData/${res.data[0].id}`, { ...res.data[0], wishlist: [] }) //always enter data.id 
+      .put(`https://mock-server-r0tm.onrender.com/userData/${res.data[0].id}`, { ...res.data[0], wishlist: [] }) //always enter data.id 
       .then((res) => {
         console.log(res)
       })

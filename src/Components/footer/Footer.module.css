@@ -1,4 +1,12 @@
-.horizontal{
+/* .horizontal{
     display: flex;
     flex-direction: column;
+} */
+
+@media (max-width: 400px) {
+    .horizontal2{
+      flex-direction: column;
+      margin-left: 10px;
+      gap: 10px;
+    }
 }

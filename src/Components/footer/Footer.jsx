@@ -5,8 +5,8 @@ import style from './Footer.module.css';
 
 function Footer() {
   return (
-    <Flex justifyContent={'center'} gap={'120px'} mb={'50px'}>
-      <Box className={style.horizontal}>
+    <Flex className={style.horizontal2} justifyContent={'center'} gap={'120px'} mb={'50px'}>
+      <Flex flexDirection={'column'}>
         <Text mb={'10px'}>ONLINE SHOPPING</Text>
         <Link>Men</Link>
         <Link>Women</Link>
@@ -15,8 +15,8 @@ function Footer() {
         <Link>Beauty</Link>
         <Link>Gift Cards</Link>
         <Link>Myntra Insider</Link>
-      </Box>
-      <Box className={style.horizontal}>
+      </Flex>
+      <Flex flexDirection={'column'}>
         <Text mb={'10px'}>CUSTOMER POLICIES</Text>
         <Link>Contact Us</Link>
         <Link>FAQ</Link>
@@ -28,8 +28,8 @@ function Footer() {
         <Link>Returns</Link>
         <Link>Privacy policy</Link>
         <Link>Grievance Officer</Link>
-      </Box>
-      <Box>
+      </Flex>
+      <Box className={style.horizontal}>
         <Box className={style.horizontal}>
             <Text mb={'10px'}>EXPERIENCE MYNTRA APP ON MOBILE</Text>
             <Flex gap={'15px'} mt={'10px'} >
@@ -37,7 +37,7 @@ function Footer() {
              <FaApple size={"40px"}/>
             </Flex>
         </Box>
-        <Box>
+        <Box className={style.horizontal}>
             <Text mb={'10px'} mt={'10px'}>KEEP IN TOUCH</Text>
             <Flex gap={'10px'} mt={'20px'}>
               <FaFacebookF size={"20px"}/>
@@ -47,7 +47,7 @@ function Footer() {
             </Flex>
         </Box>
       </Box>
-      <Box>
+      <Box className={style.horizontal}>
         <Text mb={'10px'}><b>100% ORIGINAL</b> guarantee for <br /> all products at Jatin's Website</Text>
         <Text><b>Return within 14days</b> of <br /> receiving your order.</Text>
       </Box>

@@ -98,3 +98,9 @@
     font-weight: 500;
     border-radius: 5px;
 }
+
+@media (max-width: 400px) {
+    .image{
+        display:none;
+    }
+}

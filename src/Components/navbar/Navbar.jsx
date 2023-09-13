@@ -35,7 +35,7 @@ function Navbar() {
        <div className={style.image}>
        <Link to={'/'}><FontAwesomeIcon icon={faShirt} size="2x" /></Link>
        </div>
-       <Box display={[ 'block', 'block','none', 'none']} onClick={handleDrawerOpen}><FontAwesomeIcon icon={faBars} style={{fontSize:"23px",margin:"5px"}} /></Box>
+       <Box display={[ 'block', 'block','none', 'none']} ml={'20px'} onClick={handleDrawerOpen}><FontAwesomeIcon icon={faBars} style={{fontSize:"23px",margin:"5px"}} /></Box>
        <Flex gap={"35px"} >
        <Box display={['none', 'none', 'block', 'block']}><Men/></Box>
        <Box display={['none', 'none', 'block', 'block']}><Women/></Box>
@@ -44,7 +44,7 @@ function Navbar() {
        <Box display={['none', 'none', 'block', 'block']}><Homeliving/></Box>
        <Box display={['none', 'none', 'block', 'block']}><Studio/></Box>
        </Flex>
-       <Flex ml={"100px"}>
+       <Flex ml={"100px"} display={['none', 'none', 'block', 'block']}>
           <Icon position={'relative'} top={"8px"} right={"6"} as={Search2Icon}/>
           <Input width={"350px"} size={"sm"} placeholder='Search For Products, Brands and More..' onChange={handleValue} />
        </Flex>
